@@ -39,3 +39,8 @@ D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\bin\Debug\ToolKits
 D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\obj\Debug\ToolKits.dll
 D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\obj\Debug\ToolKits.pdb
 D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\obj\Debug\ToolKits.csprojResolveAssemblyReference.cache
+D:\work\My Project\qy\quyou\ToolKits\bin\Debug\ToolKits.dll
+D:\work\My Project\qy\quyou\ToolKits\bin\Debug\ToolKits.pdb
+D:\work\My Project\qy\quyou\ToolKits\obj\Debug\ToolKits.csprojResolveAssemblyReference.cache
+D:\work\My Project\qy\quyou\ToolKits\obj\Debug\ToolKits.dll
+D:\work\My Project\qy\quyou\ToolKits\obj\Debug\ToolKits.pdb

@@ -84,3 +84,13 @@ D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\EntityFrame
 D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
 D:\Persional\customer\quyou code\quyou20190521\quyou\Model\obj\Debug\Model.dll
 D:\Persional\customer\quyou code\quyou20190521\quyou\Model\obj\Debug\Model.pdb
+D:\work\My Project\qy\quyou\Model\bin\Debug\Model.dll.config
+D:\work\My Project\qy\quyou\Model\bin\Debug\Model.dll
+D:\work\My Project\qy\quyou\Model\bin\Debug\Model.pdb
+D:\work\My Project\qy\quyou\Model\bin\Debug\EntityFramework.dll
+D:\work\My Project\qy\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\work\My Project\qy\quyou\Model\bin\Debug\EntityFramework.xml
+D:\work\My Project\qy\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\work\My Project\qy\quyou\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\work\My Project\qy\quyou\Model\obj\Debug\Model.dll
+D:\work\My Project\qy\quyou\Model\obj\Debug\Model.pdb
