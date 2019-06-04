@@ -1,0 +1,328 @@
+﻿@{
+    ViewBag.Title = "物流管理";
+}
+@using Model;
+@model LgsticForDisplay
+<style type="text/css">
+    .hligt {
+        /*border-color: #66afe9;*/
+        background-color: #FFFF99;
+    }
+</style>
+
+
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-list"></i> 采购单详细信息</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">采购单号</span>
+                        @Html.LabelForModel(Model.PNbr, new { @class = "form-control" })                     
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">申请人</span>
+                        @Html.LabelForModel(Model.ModUser, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">申请日期</span>
+                        @Html.LabelForModel(Model.Cdt, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">状态</span>
+                        @Html.LabelForModel(Model.chsTskName, new { @class = "form-control" })
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row" style="margin-top:15px;">
+                <div class="col-lg-12 table-responsive">
+                    <table id="tbMain" class="table table-hover" data-pagination="true" data-show-refresh="true">
+                        <thead>
+                            <tr>
+                                <th data-field="Id" class="text-center">Id</th>
+                                <th data-field="FBA" class="text-center">FBA</th>
+                                <th data-field="Sku" class="text-center">SKU</th>
+                                <th data-field="FinalQty" class="text-center">数量</th>
+                                <th data-field="OuterBoxDim" class="text-center">外箱大小(m³)</th>
+                                <th data-field="OuterBoxQty" class="text-center">外箱数量</th>
+                                <th data-field="Weight" class="text-center">重量(KG)</th>
+                                <th data-field="DestPort" class="text-center">目的港口</th>
+                                <th data-field="ShipCat" class="text-center">出运方式</th>
+                                <th data-field="LChsSupplier" class="text-center">货运公司</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-edit"></i> 确认到货</h3>
+        </div>
+        <div class="panel-body">
+
+                 <div class="row">
+                     <div class="col-lg-12 table-responsive">
+                         <table id="tblgc" class="table table-hover table-striped table-bordered" data-pagination="true" data-show-refresh="true">
+                             <thead>
+                                 <tr>
+                                     <th data-field="Id" class="text-center hidden">Id</th>                                    
+                                     <th data-field="FBA" class="text-center">FBA</th>
+                                     <th data-field="LgcNbr" class="text-center">物流单号</th>
+                                     <th data-field="yundanNbr" class="text-center">运单号</th>
+                                     <th data-field="carriageChrge" class="text-center">运费</th>
+                                     <th data-field="InspecChrge" class="text-center">检查费</th>
+                                     <th data-field="traiffChrge" class="text-center">关税</th>
+                                     <th data-field="others" class="text-center">其它费用</th>                                     
+                                     <th data-field="confirmComments" class="text-center">备注</th>
+                                     <th data-field="ArrvialDate" class="text-center" >到货日期</th>
+                                 </tr>
+                             </thead>
+                             <tbody></tbody>
+                         </table>
+                     </div>
+                    
+
+
+
+
+            </div>
+
+
+       
+
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<div class="row" style="margin-bottom:15px;">
+    <div class="btn-group-sm pull-right">
+        <button type="button" class="btn btn-primary btn-sm btn-block" onclick="javascript: history.go(-1);" style="width:150px;">返回上一页</button>
+
+    </div>
+</div>
+@section scripts{
+    <script type="text/javascript">
+        rowIdex = 1;
+    function initTable(ponbr) {
+        $("#tbMain").bootstrapTable('destroy').bootstrapTable({
+            method: "get",  //使用get请求到服务器获取数据
+            url: "@Url.Action("List_POForDisplay", "Service")", //获取数据的Servlet地址
+            striped: true,  //表格显示条纹
+            cache: false,
+            pagination: true, //启动分页
+            paginationHAlign: 'right',
+            paginationVAlign: 'bottom', //bottom, top, both
+            paginationDetailHAlign: 'left', //right, left
+            showPaginationSwitch: false,//展示页数的选择？
+            pageSize: 10,
+            pageNumber: 1, //当前第几页
+            pageList: [5, 10, 15, 20, 25],
+            search: false,
+            showColumns: false,  //显示下拉框勾选要显示的列
+            showRefresh: false,  //显示刷新按钮
+            sidePagination: "client", //server表示服务端请求client
+            queryParamsType: "limit",
+            queryParams: function queryParams(params) {   //设置查询参数
+                var param = {
+                    pnbr: ponbr
+
+                };
+                return param;
+            },
+            formatSearch: function () {
+                return 'Search: Request Number';
+            },
+            onLoadSuccess: function () {  //加载成功时执行
+                //layer.msg("加载成功");
+            },
+            onLoadError: function () {  //加载失败时执行
+                //layer.msg("加载数据失败", { time: 1500, icon: 2 });
+            }
+        });
+    }
+    function listLogistics(pnum) {
+        $("#tbMain tbody>tr").remove();
+    
+        $.post('@Url.Action("List_logistics", "Service")', { pnbr: pnum, islistSKU: 'N' }, function (data) {
+            $(data).each(function () { bind_logistics(this); });
+        });
+
+        layer.closeAll();
+
+    }
+        function bind_logistics(obj) {
+        var $tb = $("#tblgc")
+        var firstTr = $tb.find("tbody>tr:last");
+        var row = $("<tr id='tr" + rowIdex + "'></tr>");
+        var td_1 = $("<td class='hidden'></td>");  //id
+        var td_2 = $("<td class='text-center'></td>");   //FBA
+        var td_3 = $("<td class='text-center'></td>");  //LgcNbr
+        var td_4 = $("<td class='text-center'></td>");   //yundanNbr
+        var td_5 = $("<td class='text-center'></td>");   //carriageChrge
+        var td_6 = $("<td class='text-center'></td>");    //InspecChrge
+        var td_7 = $("<td class='text-center'></td>");   //traiffChrge
+        var td_8 = $("<td class='text-center'></td>");   //others      
+        var td_10 = $("<td class='text-center'></td>");   //confirmComments
+        var td_9 = $("<td class='text-center'></td>");   //ArrvialDate
+
+        td_1.append($("<input class='form-control input-sm'  value='" + obj.Id + "' />"));
+        td_2.append(obj.FBA);
+        td_3.append(obj.LgcNbr);
+
+        if (obj.ArrvialDate != null && obj.ArrvialDate != '') {
+            td_4.append(obj.yundanNbr);
+            td_5.append(obj.carriageChrge);
+            td_6.append(obj.InspecChrge);
+            td_7.append(obj.traiffChrge);
+            td_8.append(obj.others);
+            td_9.append(obj.confirmComments);
+            td_10.append(obj.ArrvialDate);
+        } else {
+            td_4.append($("<input class='form-control input-sm' style='width:100px;' placeholder='*'  value='" + obj.yundanNbr + "' onkeyup='chgevnt(this);' onchange='chgevnt(this);'/>"));
+            td_5.append($("<input class='form-control input-sm'  type='number' style='width:100px;' placeholder='*' value='" + obj.carriageChrge + "' onkeyup='chgevnt(this);' onchange='chgevnt(this);'/>"));
+            td_6.append($("<input class='form-control input-sm'  type='number' style='width:100px;' placeholder='*' value='" + obj.InspecChrge + "' onkeyup='chgevnt(this);' onchange='chgevnt(this);'/>"));
+            td_7.append($("<input class='form-control input-sm'  type='number' style='width:100px;' placeholder='*'  value='" + obj.traiffChrge + "' onkeyup='chgevnt(this);' onchange='chgevnt(this);'/>"));
+            td_8.append($("<input class='form-control input-sm'  type='number' style='width:100px;' placeholder='*'  value='" + obj.others + "' onkeyup='chgevnt(this);' onchange='chgevnt(this);'/>"));
+            td_9.append($('<input class="form-control input-sm" style="width:150px;" type="text" value="' + obj.confirmComments + '"/>'));
+                      
+            td_10.append($("<button type='button' class='btn btn-primary btn-sm' onclick='btnSubmit(" + obj.Id + ");'>确认到货</button>"));
+        }
+    
+        
+
+        row.append(td_1).append(td_2).append(td_3).append(td_4).append(td_5).append(td_6).append(td_7).append(td_8).append(td_9).append(td_10);
+        $tb.append(row);
+        
+        rowIdex++;
+
+        }
+
+        function getlgcChrg(lId) {
+            var chrg = "";
+            $("#tblgc tbody tr").each(function (i) {
+                var trArr = []; //存所有数据
+                    $("input:not(:button),select,textarea", this).each(function (i) { //便利行内的input select的值                    
+                        var tv = $(this).val();
+                        trArr.push($(this).val());
+                    });
+                    if (lId == trArr[0]) {
+                        var objchrg = {};
+                        objchrg["Id"] = lId;
+                        objchrg["yundanNbr"] = trArr[1];
+                        objchrg["carriageChrge"] = trArr[2];
+                        objchrg["InspecChrge"] = trArr[3];
+                        objchrg["traiffChrge"] = trArr[4];
+                        objchrg["others"] = trArr[5];
+                        objchrg["confirmComments"] = trArr[6];
+                        chrg = JSON.stringify(objchrg);                      
+                        return false;                      
+                    }
+                         
+            });
+            return chrg;
+        }
+
+
+
+    $(function () {
+        layer.load(1, { shade: [0.5, '#fff'] });   //show loading...
+        initTable('@Model.PNbr');
+        listLogistics('@Model.PNbr');
+        layer.closeAll('loading');
+    });
+
+        function btnSubmit(lId) {        
+            layer.confirm('确定要提交吗？', {
+                icon: 3,
+                title: '系统消息',
+                btn: ['确定', '取消']
+            }, function () {
+                var act = '@Model.engTskName' + 'Submit';
+                var lgcchrg = getlgcChrg(lId);
+                btnEvent(act, lgcchrg);
+
+            });
+
+
+        }
+
+        function btnEvent(act,chrg) {
+            var index = layer.load(1, { shade: [0.5, '#fff'] });   //show loading...
+            //var lgcchrge = GetLgcCharge();           
+            console.log(chrg);
+            $.post("@Url.Action("logicConfirm", "TaskMgr")", { BPId: '@Model.BPId', pnbr: '@Model.PNbr', actType: act, lgcChrgs: chrg }, function (rst) {
+            if (!rst.state) {
+                layer.msg(rst.msg, { time: 1500, icon: 2 }, function () { layer.close(index); });
+            } else {
+                layer.msg(rst.msg, { time: 1500, icon: 1 }, function () {
+                    layer.close(index); if (act.indexOf('Submit') != -1) {
+                        window.document.location.reload();
+                        
+                        //window.document.location.href = '@Url.Action("InProcess", "TaskMgr")';
+                    }
+                });               
+            }
+        });
+    }
+
+
+    function chgevnt(e) {
+        if ($(e).val().length == 0 || $(e).val() == 'null') {
+            $(e).addClass("hligt");
+
+        } else {
+            $(e).removeClass("hligt");
+        }
+
+
+    }
+    function Validate() {
+        var flag = true;
+        var tableArr = []; //存所有数据
+        $("#tblgc tbody tr").each(function () { //便利除标题行外所有行
+            $("input:not(:button),select,textarea", this).each(function (i) { //便利行内的input select的值
+                if ($(this).val().length == 0 || $(this).val() == 'null') {
+                    if (i != 11) {   //11 -comments
+                        $(this).addClass("hligt");
+                        flag = false;
+                    }
+                } else {
+                    $(this).removeClass("hligt");
+                }
+            });
+
+        });
+        return flag;
+    }
+
+    </script>
+
+}

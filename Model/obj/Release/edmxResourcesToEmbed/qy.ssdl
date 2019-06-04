@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quyouModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbBP">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PNbr" Type="varchar" MaxLength="50" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="Cdt" Type="smalldatetime" />
+    <Property Name="TskId" Type="int" />
+    <Property Name="EndDate" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="tbCurrency">
+    <Key>
+      <PropertyRef Name="CyId" />
+    </Key>
+    <Property Name="CyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CyCat" Type="varchar" MaxLength="200" />
+    <Property Name="symbol" Type="varchar" MaxLength="50" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="2000" />
+    <Property Name="StatusId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbFile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PNbr" Type="varchar" MaxLength="50" />
+    <Property Name="Ftype" Type="varchar" MaxLength="50" />
+    <Property Name="ModUserId" Type="int" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="Cdt" Type="smalldatetime" />
+    <Property Name="Udt" Type="smalldatetime" />
+    <Property Name="FName" Type="ntext" />
+  </EntityType>
+  <EntityType Name="tbMain">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PNbr" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FBA" Type="nvarchar" MaxLength="200" />
+    <Property Name="Sku" Type="nvarchar" MaxLength="200" />
+    <Property Name="Qty" Type="decimal" Precision="10" Scale="3" />
+    <Property Name="UnitPrice" Type="decimal" Precision="10" Scale="3" />
+    <Property Name="Currency" Type="nvarchar" MaxLength="200" />
+    <Property Name="OuterBoxDim" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="OuterBoxQty" Type="decimal" Precision="10" Scale="3" />
+    <Property Name="Weight" Type="decimal" Precision="10" Scale="3" />
+    <Property Name="DestPort" Type="nvarchar" MaxLength="500" />
+    <Property Name="ShipCat" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comments" Type="ntext" />
+    <Property Name="Cdt" Type="smalldatetime" />
+    <Property Name="Udt" Type="smalldatetime" />
+    <Property Name="FinalQty" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="SupplierId" Type="int" />
+    <Property Name="LSupplierId" Type="int" />
+    <Property Name="unitCost" Type="decimal" Precision="10" Scale="3" />
+  </EntityType>
+  <EntityType Name="tbPO">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PNbr" Type="varchar" MaxLength="50" />
+    <Property Name="ModUserId" Type="int" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="Remark" Type="ntext" />
+    <Property Name="Cdt" Type="smalldatetime" />
+    <Property Name="Udt" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="tbStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Name2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="500" />
+    <Property Name="Cdt" Type="date" />
+  </EntityType>
+  <EntityType Name="tbSupplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EngName" Type="varchar" MaxLength="200" />
+    <Property Name="ChsName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Remark" Type="ntext" />
+    <Property Name="ModUserId" Type="int" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="Cdt" Type="smalldatetime" />
+    <Property Name="Udt" Type="smalldatetime" />
+    <Property Name="SuppCat" Type="varchar" MaxLength="50" />
+    <Property Name="Rcpt_Bank_Nbr" Type="varchar" MaxLength="200" />
+    <Property Name="Rcpt_Bank_Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="500" />
+    <Property Name="QQ" Type="nvarchar" MaxLength="200" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="254" />
+    <Property Name="type" Type="nvarchar" MaxLength="254" />
+  </EntityType>
+  <Function Name="Get_POForDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pnbr" Type="varchar" Mode="In" />
+    <Parameter Name="BPId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Get_Request_Num" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReqstType" Type="varchar" Mode="In" />
+    <Parameter Name="ChgNum" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_AddPO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="actType" Type="varchar" Mode="In" />
+    <Parameter Name="PNbr" Type="varchar" Mode="In" />
+    <Parameter Name="fba" Type="varchar" Mode="In" />
+    <Parameter Name="sku" Type="varchar" Mode="In" />
+    <Parameter Name="qty" Type="int" Mode="In" />
+    <Parameter Name="unitPrice" Type="varchar" Mode="In" />
+    <Parameter Name="currency" Type="int" Mode="In" />
+    <Parameter Name="OboxDim" Type="varchar" Mode="In" />
+    <Parameter Name="OboxQty" Type="int" Mode="In" />
+    <Parameter Name="weight" Type="varchar" Mode="In" />
+    <Parameter Name="destPort" Type="nvarchar" Mode="In" />
+    <Parameter Name="comns" Type="ntext" Mode="In" />
+    <Parameter Name="userId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_proc_del_PO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="actType" Type="varchar" Mode="In" />
+    <Parameter Name="pnbr" Type="varchar" Mode="In" />
+    <Parameter Name="fba" Type="nvarchar" Mode="In" />
+    <Parameter Name="sku" Type="nvarchar" Mode="In" />
+    <Parameter Name="userId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_proc_file" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="actType" Type="varchar" Mode="In" />
+    <Parameter Name="FId" Type="int" Mode="In" />
+    <Parameter Name="pnbr" Type="varchar" Mode="In" />
+    <Parameter Name="ftype" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_proc_List_tsks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userId" Type="int" Mode="In" />
+    <Parameter Name="tskName" Type="varchar" Mode="In" />
+    <Parameter Name="pageIndex" Type="varchar" Mode="In" />
+    <Parameter Name="PageSize" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_proc_List_tsks_by_tskStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userId" Type="int" Mode="In" />
+    <Parameter Name="tskStatus" Type="varchar" Mode="In" />
+    <Parameter Name="pageIndex" Type="varchar" Mode="In" />
+    <Parameter Name="PageSize" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_proc_logistics" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="actType" Type="varchar" Mode="In" />
+    <Parameter Name="BPId" Type="int" Mode="In" />
+    <Parameter Name="yundan" Type="nvarchar" Mode="In" />
+    <Parameter Name="carriage" Type="varchar" Mode="In" />
+    <Parameter Name="traiff" Type="varchar" Mode="In" />
+    <Parameter Name="inspec" Type="varchar" Mode="In" />
+    <Parameter Name="notes" Type="ntext" Mode="In" />
+    <Parameter Name="others" Type="varchar" Mode="In" />
+    <Parameter Name="lId" Type="int" Mode="In" />
+    <Parameter Name="userId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_proc_Read_PO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pnbr" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_taskAction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pnbr" Type="varchar" Mode="In" />
+    <Parameter Name="BPId" Type="int" Mode="In" />
+    <Parameter Name="userId" Type="int" Mode="In" />
+    <Parameter Name="actType" Type="varchar" Mode="In" />
+    <Parameter Name="notes" Type="ntext" Mode="In" />
+  </Function>
+  <EntityContainer Name="quyouModelStoreContainer">
+    <EntitySet Name="tbBP" EntityType="Self.tbBP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbCurrency" EntityType="Self.tbCurrency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbFile" EntityType="Self.tbFile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbMain" EntityType="Self.tbMain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbPO" EntityType="Self.tbPO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbStatus" EntityType="Self.tbStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbSupplier" EntityType="Self.tbSupplier" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

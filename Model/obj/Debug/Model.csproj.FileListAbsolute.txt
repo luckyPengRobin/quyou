@@ -1,0 +1,86 @@
+D:\Persional\customer\quyou\Model\bin\Debug\Model.dll.config
+D:\Persional\customer\quyou\Model\bin\Debug\Model.dll
+D:\Persional\customer\quyou\Model\bin\Debug\Model.pdb
+D:\Persional\customer\quyou\Model\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou\Model\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou\Model\obj\Debug\Model.dll
+D:\Persional\customer\quyou\Model\obj\Debug\Model.pdb
+D:\Persional\customer\quyou\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\waitforcombining\quyou\Model\bin\Debug\Model.dll.config
+C:\Source\web\projects\code\waitforcombining\quyou\Model\bin\Debug\Model.dll
+C:\Source\web\projects\code\waitforcombining\quyou\Model\bin\Debug\Model.pdb
+C:\Source\web\projects\code\waitforcombining\quyou\Model\bin\Debug\EntityFramework.dll
+C:\Source\web\projects\code\waitforcombining\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\waitforcombining\quyou\Model\bin\Debug\EntityFramework.xml
+C:\Source\web\projects\code\waitforcombining\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\waitforcombining\quyou\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\waitforcombining\quyou\Model\obj\Debug\Model.dll
+C:\Source\web\projects\code\waitforcombining\quyou\Model\obj\Debug\Model.pdb
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Debug\Model.dll.config
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Debug\Model.dll
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Debug\Model.pdb
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyouupdate\quyou\Model\obj\Debug\Model.dll
+D:\Persional\customer\quyouupdate\quyou\Model\obj\Debug\Model.pdb
+D:\Persional\customer\quyouupdate\quyou\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Source\quyou\qy\robin0404\quyou\Model\bin\Debug\Model.dll.config
+C:\Source\quyou\qy\robin0404\quyou\Model\bin\Debug\Model.dll
+C:\Source\quyou\qy\robin0404\quyou\Model\bin\Debug\Model.pdb
+C:\Source\quyou\qy\robin0404\quyou\Model\bin\Debug\EntityFramework.dll
+C:\Source\quyou\qy\robin0404\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\quyou\qy\robin0404\quyou\Model\bin\Debug\EntityFramework.xml
+C:\Source\quyou\qy\robin0404\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\quyou\qy\robin0404\quyou\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Source\quyou\qy\robin0404\quyou\Model\obj\Debug\Model.dll
+C:\Source\quyou\qy\robin0404\quyou\Model\obj\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou\Model\bin\Debug\Model.dll.config
+D:\Persional\customer\quyou code\quyou\Model\bin\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou\Model\bin\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou\Model\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou\Model\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou\Model\obj\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou\Model\obj\Debug\Model.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\bin\Debug\Model.dll.config
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\bin\Debug\Model.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\bin\Debug\Model.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\bin\Debug\EntityFramework.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\bin\Debug\EntityFramework.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\obj\Debug\Model.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\Model\obj\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\bin\Debug\Model.dll.config
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\bin\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\bin\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\obj\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\Model\obj\Debug\Model.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\bin\Debug\Model.dll.config
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\bin\Debug\Model.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\bin\Debug\Model.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\bin\Debug\EntityFramework.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\bin\Debug\EntityFramework.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\obj\Debug\Model.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\Model\obj\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\Model.dll.config
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\obj\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\obj\Debug\Model.pdb

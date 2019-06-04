@@ -1,0 +1,266 @@
+﻿@{
+    ViewBag.Title = "物流管理";
+}
+@using Model;
+@model TskForDisplay
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-list"></i> 采购单详细信息</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">采购单号</span>
+                        @Html.LabelForModel(Model.PNbr, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">申请人</span>
+                        @Html.LabelForModel(Model.ModUser, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">申请日期</span>
+                        @Html.LabelForModel(Model.Cdt, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">状态</span>
+                        @Html.LabelForModel(Model.chsTskName, new { @class = "form-control" })
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row" style="margin-top:15px;">
+                <div class="col-lg-12 table-responsive">
+                    <table id="tbMain" class="table table-hover table-striped table-bordered text-center" data-pagination="true" data-show-refresh="true">
+                        <thead>
+                            <tr>
+                               
+                                <th data-field="Id" class="text-center">#</th>
+                                <th data-field="LgcNbr" class="text-center">物流单号</th>
+                                <th data-field="FBA" class="text-center">FBA</th>
+                                <th data-field="Sku" class="text-center">SKU</th>
+                                <th data-field="FinalQty" class="text-center">数量</th>
+                                <th data-field="OuterBoxDim" class="text-center">外箱大小(m³)</th>
+                                <th data-field="OuterBoxQty" class="text-center">外箱数量</th>
+                                <th data-field="Weight" class="text-center">重量(KG)</th>
+                                <th data-field="DestPort" class="text-center">目的港口</th>
+                                <th data-field="ShipCat" class="text-center">出运方式</th>
+                                <th data-field="SupplierId" class="text-center">货运公司</th>
+                                <th data-field="mainId" class="hidden">mainId</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-edit"></i> 发起物流</h3>
+        </div>
+        <div class="panel-body">
+            <div class="col-lg-12">
+
+                <div class="form-group form-group-sm col-sm-12">
+                    <textarea id="AppComns" name="AppComns" class="form-control" rows="3" placeholder="请填写备注信息...">@Model.coments</textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="row col-lg-12">
+    <div class="btn-group-sm pull-right">
+        <button type="button" class="btn btn-default btn-sm" onclick="formSave();">保存</button>
+        <button type="button" class="btn btn-primary btn-sm" onclick="formSubmit();">发起物流</button>
+    </div>
+</div>
+
+
+
+
+
+@section scripts{
+<script src="~/Scripts/cust/yiqinfo.js"></script>
+    <script type="text/javascript">
+        var rowIdex = 1;
+
+        $(function () {
+            rowIdex = 1;
+            $("#tbMain tbody>tr").remove();
+
+            $.get('@Url.Action("List_logistics", "Service")', { pnbr: '@Model.PNbr', islistSKU: 'Y' }, function (data) {
+                $(data).each(function () { bind_POes(this); });
+            });
+
+
+
+            @*$.ajax({
+                async: false,
+                url: '@Url.Content("~/Service/List_logistics")',
+                type: "GET",
+                dataType: "json",               
+                data: { pnbr: '@Model.PNbr', islistSKU: 'Y' },
+                success: function (result) {
+                    console.log(result);
+                    if (result) {
+                        //layer.msg(result.msg, { time: 500, icon: 1 });
+                        $(result).each(function () { bind_POes(this); });
+                       
+                    }
+                    else {
+                        layer.msg(result.msg, { time: 1500, icon: 2 });
+                    }
+                }
+            });*@
+
+            layer.closeAll();
+
+    });
+
+        function formSave() {
+            var act = '@Model.engTskName' + 'Save';
+            btnActionEvent(act);
+        }
+        function formSubmit() {
+            var suplist = getSupplier();
+            if (suplist != false) {
+                layer.confirm('确定要提交吗？', {
+                    icon: 3,
+                    title: '系统消息',
+                    btn: ['确定', '取消']
+                }, function () {
+                    var act = '@Model.engTskName' + 'Submit';
+                    btnActionEvent(act);                   
+                });
+
+            } else {
+                layer.msg('请选择货运公司.', { time: 1500, icon: 2 }, function () { layer.close(index); });
+            }
+        }
+        function btnActionEvent(act) {
+            layer.closeAll('loading');
+            var index = layer.load(1, { shade: [0.5, '#fff'] });  //show loading...
+            var suplist = getSupplier();
+            if (suplist != false) {
+                $.post("@Url.Action("logistics", "TaskMgr")", { BPId: '@Model.BPId', pnbr: '@Model.PNbr', coments: $("#AppComns").val(), actType: act, LSupps: suplist }, function (rst) {
+                    if (!rst.state) {
+                        layer.msg(rst.msg, { time: 1500, icon: 2 }, function () { layer.close(index); });
+
+                    } else {
+                        layer.msg(rst.msg, { time: 1500, icon: 1 }, function () {
+                            layer.close(index); if (act.indexOf('Submit') != -1) {
+                                window.document.location.href = '@Url.Action("InProcess", "TaskMgr")';
+                            }
+                        });
+                     
+                    }
+                });
+            } else {
+                layer.msg('请选择货运公司.', { time: 1500, icon: 2 }, function () { layer.close(index); });
+            }
+        }
+
+
+        function bind_POes(obj) {
+
+            var $tb = $("#tbMain")
+            var firstTr = $tb.find("tbody>tr:last");
+            var row = $("<tr id='tr" + rowIdex + "'></tr>");
+            var td_1 = $("<td></td>");  //id
+            var td_2 = $("<td></td>");   //
+            var td_3 = $("<td></td>");
+            var td_4 = $("<td></td>");
+            var td_5 = $("<td></td>");
+            var td_6 = $("<td></td>");
+            var td_7 = $("<td></td>");
+            var td_8 = $("<td></td>");
+            var td_9 = $("<td></td>");
+            var td_10 = $("<td></td>");
+            var td_11 = $("<td></td>");
+            var td_12 = $("<td class='hidden'></td>");
+            
+            td_1.append(rowIdex);
+            td_2.append(obj.LgcNbr);
+            td_3.append(obj.FBA);
+            td_4.append(obj.Sku);
+            td_5.append(obj.FinalQty);
+            td_6.append(obj.OuterBoxDim);
+            td_7.append(obj.OuterBoxQty);
+            td_8.append(obj.Weight);
+            td_9.append(obj.DestPort);
+            td_10.append(obj.ShipCat);
+            td_11.append($("<select id='sply" + rowIdex + "' name='sply" + rowIdex + "' class='form-control' style='width:200px;'> <option></option></select>"));   //supplier
+            td_12.append(obj.mainId);
+            row.append(td_1).append(td_2).append(td_3).append(td_4).append(td_5).append(td_6).append(td_7).append(td_8).append(td_9).append(td_10).append(td_11).append(td_12);
+            $tb.append(row);
+      
+            SupplierSearch("sply" + rowIdex + "")
+            if (obj.LSupplierId != null && obj.LSupplierId != "") {
+                bindSupplier("sply" + rowIdex + "", obj.LSupplierId);
+            }
+            rowIdex++;
+
+        }
+
+
+        function bindSupplier(crnId, suppid) {
+            $.post('@Url.Action("get_supplier_by_id", "Service")', { id: suppid }, function (data) {
+
+                $("#" + crnId).append(new Option(data.ChsName, data.Id, true, true)).trigger("change");
+
+            });
+        }
+
+
+        function getSupplier() {
+
+            var flag = true;
+
+            var trArr = []; //存所有数据
+            $("#tbMain tbody tr").each(function () { //便利除标题行外所有行
+                if ($("select", this)[0].value == "") {
+                    flag = false;
+                }
+                var obj = {};
+                obj["id"] = $(this)[0].cells[11].innerText;
+                obj["text"] = $("select", this)[0].value
+                trArr.push(obj);
+
+            });
+            if (flag) {
+                return JSON.stringify(trArr);
+            } else {
+                return false;
+            }         
+        }
+
+
+
+    </script>
+
+}

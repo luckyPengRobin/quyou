@@ -1,0 +1,17 @@
+D:\Persional\customer\quyouupdate\quyou\ToolKits\bin\Release\ToolKits.dll
+D:\Persional\customer\quyouupdate\quyou\ToolKits\bin\Release\ToolKits.pdb
+D:\Persional\customer\quyouupdate\quyou\ToolKits\bin\Release\EPPlus.dll
+D:\Persional\customer\quyouupdate\quyou\ToolKits\bin\Release\NPOI.dll
+D:\Persional\customer\quyouupdate\quyou\ToolKits\obj\Release\ToolKits.dll
+D:\Persional\customer\quyouupdate\quyou\ToolKits\obj\Release\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou\ToolKits\bin\Release\ToolKits.dll
+D:\Persional\customer\quyou code\quyou\ToolKits\bin\Release\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou\ToolKits\bin\Release\EPPlus.dll
+D:\Persional\customer\quyou code\quyou\ToolKits\bin\Release\NPOI.dll
+D:\Persional\customer\quyou code\quyou\ToolKits\obj\Release\ToolKits.dll
+D:\Persional\customer\quyou code\quyou\ToolKits\obj\Release\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\bin\Release\ToolKits.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\bin\Release\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\obj\Release\ToolKits.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\obj\Release\ToolKits.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\ToolKits\obj\Release\ToolKits.pdb

@@ -1,0 +1,35 @@
+﻿--2019.3.12
+FQA：
+1. 在待处理箱里找不到单号 －－－ 检查用户的权限
+
+
+--5Mar,2019
+ 1. 批量上传成功后添加提示    -- done
+ 2. 登陆加loading   －－ done
+ 3. 保存采购单时对数据进行验证  -- done
+ 4. 删除一条FBA/sku   --done
+ 5. 修改采购单后保存，在修改采购单里丢失  -- done
+ 6. 去掉不需要的js function
+ 7. 审批的驳回功能没写   
+ 8. comments 加上单引号
+ 9. 运营cancel 
+ 10. user setting
+ 11. SKU management
+ 12. 物流任务列表显示物流单号？
+ 13. 供应商是否分为商品供应商和物流供应商?
+--28 Feb,2019
+1. 新增采购单时，具有相同PO号，FBA号，SKU号的多条数据会被系统保存为最后一条数据  －－ done  j以相同的PONbr+FBA_+SKU作为唯一记录
+
+
+
+1. 用户操作权限(角色) 在tbRole里定义 
+
+
+
+
+－－－－－－－Sql
+--更新数据类型
+--alter table [dbo].[tbMain] alter column [FinalQty] decimal(10,2) null
+
+--添加字段
+alter table [dbo].[tbFile] add [FName] ntext

@@ -1,0 +1,512 @@
+D:\Persional\customer\quyou code\quyou\quyou\bin\quyou.dll.config
+D:\Persional\customer\quyou code\quyou\quyou\bin\quyou.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\quyou.pdb
+D:\Persional\customer\quyou code\quyou\quyou\bin\Antlr3.Runtime.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\BLL.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.AspNet.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.Core.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OAuth.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OpenId.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Data.Edm.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Data.OData.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Web.Infrastructure.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\Model.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Net.Http.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Net.Http.Formatting.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Net.Http.WebRequest.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Spatial.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Helpers.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Http.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Http.OData.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Http.WebHost.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Mvc.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Optimization.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Razor.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.WebPages.Deployment.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.WebPages.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.WebPages.Razor.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ToolKits.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\WebGrease.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\WebMatrix.Data.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\WebMatrix.WebData.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\DAL.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\NPOI.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\EPPlus.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\BLL.pdb
+D:\Persional\customer\quyou code\quyou\quyou\bin\Model.pdb
+D:\Persional\customer\quyou code\quyou\quyou\bin\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou\quyou\bin\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou\quyou\bin\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Helpers.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Mvc.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Razor.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.WebPages.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.WebPages.Deployment.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.WebPages.Razor.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Net.Http.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Net.Http.Formatting.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Net.Http.WebRequest.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Http.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Http.WebHost.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\WebMatrix.Data.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\WebMatrix.WebData.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.AspNet.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.Core.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OAuth.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OpenId.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Web.Http.OData.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Data.Edm.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\Microsoft.Data.OData.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\System.Spatial.xml
+D:\Persional\customer\quyou code\quyou\quyou\bin\DAL.pdb
+D:\Persional\customer\quyou code\quyou\quyou\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\de\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\es\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\it\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\de\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\es\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\fr\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\it\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ja\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ko\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\ru\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\zh-Hans\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\bin\zh-Hant\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou\quyou\obj\Debug\quyou.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou\quyou\obj\Debug\quyou.dll
+D:\Persional\customer\quyou code\quyou\quyou\obj\Debug\quyou.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\quyou.dll.config
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\quyou.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\quyou.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Antlr3.Runtime.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\BLL.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.AspNet.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.Core.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OAuth.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OpenId.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\EntityFramework.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Data.Edm.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Data.OData.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Web.Infrastructure.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Model.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Newtonsoft.Json.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Net.Http.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Net.Http.Formatting.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Net.Http.WebRequest.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Spatial.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Helpers.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Http.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Http.OData.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Http.WebHost.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Mvc.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Optimization.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Razor.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.WebPages.Deployment.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.WebPages.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.WebPages.Razor.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ToolKits.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\WebGrease.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\WebMatrix.Data.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\WebMatrix.WebData.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DAL.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\NPOI.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\EPPlus.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Linq.Dynamic.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\BLL.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Model.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ToolKits.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\EntityFramework.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Newtonsoft.Json.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Newtonsoft.Json.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Helpers.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Mvc.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Razor.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.WebPages.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.WebPages.Deployment.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.WebPages.Razor.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Net.Http.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Net.Http.Formatting.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Net.Http.WebRequest.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Http.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Http.WebHost.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\WebMatrix.Data.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\WebMatrix.WebData.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.AspNet.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.Core.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OAuth.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OpenId.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Web.Http.OData.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Data.Edm.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\Microsoft.Data.OData.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\System.Spatial.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\DAL.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\de\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\es\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\it\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\de\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\es\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\fr\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\it\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ja\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ko\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\ru\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\zh-Hans\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\bin\zh-Hant\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\obj\Debug\quyou.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\obj\Debug\quyou.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\quyou\obj\Debug\quyou.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\quyou.dll.config
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\quyou.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\quyou.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Antlr3.Runtime.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\BLL.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.AspNet.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.Core.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OAuth.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OpenId.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Data.Edm.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Data.OData.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Web.Infrastructure.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Model.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Net.Http.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Net.Http.Formatting.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Net.Http.WebRequest.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Spatial.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Helpers.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Http.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Http.OData.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Http.WebHost.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Mvc.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Optimization.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Razor.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.WebPages.Deployment.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.WebPages.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.WebPages.Razor.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ToolKits.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\WebGrease.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\WebMatrix.Data.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\WebMatrix.WebData.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DAL.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\NPOI.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\EPPlus.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\BLL.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Model.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Helpers.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Mvc.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Razor.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.WebPages.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.WebPages.Deployment.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.WebPages.Razor.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Net.Http.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Net.Http.Formatting.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Net.Http.WebRequest.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Http.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Http.WebHost.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\WebMatrix.Data.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\WebMatrix.WebData.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.AspNet.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.Core.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OAuth.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OpenId.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Web.Http.OData.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Data.Edm.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\Microsoft.Data.OData.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\System.Spatial.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\DAL.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\de\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\es\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\it\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\de\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\es\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\fr\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\it\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ja\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ko\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\ru\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\zh-Hans\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\bin\zh-Hant\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\obj\Debug\quyou.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\obj\Debug\quyou.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\quyou\obj\Debug\quyou.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\obj\Debug\quyou.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\obj\Debug\quyou.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\quyou.dll.config
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\quyou.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\quyou.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Antlr3.Runtime.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\BLL.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.AspNet.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.Core.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OAuth.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OpenId.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\EntityFramework.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Data.Edm.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Data.OData.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Web.Infrastructure.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Model.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Newtonsoft.Json.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Net.Http.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Net.Http.WebRequest.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Spatial.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Helpers.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Http.OData.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Mvc.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Optimization.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Razor.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.WebPages.Deployment.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.WebPages.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.WebPages.Razor.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ToolKits.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\WebGrease.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\WebMatrix.Data.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\WebMatrix.WebData.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DAL.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\NPOI.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\EPPlus.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Linq.Dynamic.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\BLL.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Model.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ToolKits.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\EntityFramework.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Newtonsoft.Json.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Newtonsoft.Json.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Helpers.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Mvc.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Razor.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.WebPages.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.WebPages.Deployment.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.WebPages.Razor.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Net.Http.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Net.Http.WebRequest.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\WebMatrix.Data.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\WebMatrix.WebData.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.AspNet.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.Core.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OAuth.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OpenId.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Web.Http.OData.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Data.Edm.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\Microsoft.Data.OData.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\System.Spatial.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\DAL.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\de\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\es\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\it\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\de\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\es\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\fr\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\it\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ja\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ko\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\ru\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\zh-Hans\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\bin\zh-Hant\System.Spatial.resources.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\quyou\obj\Debug\quyou.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\quyou.dll.config
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\quyou.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\quyou.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Antlr3.Runtime.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\BLL.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.AspNet.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.Core.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OAuth.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OpenId.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Data.Edm.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Data.OData.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Web.Infrastructure.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Model.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Net.Http.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Net.Http.WebRequest.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Spatial.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Helpers.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Http.OData.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Mvc.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Optimization.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Razor.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.WebPages.Deployment.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.WebPages.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.WebPages.Razor.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ToolKits.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\WebGrease.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\WebMatrix.Data.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\WebMatrix.WebData.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DAL.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\NPOI.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\EPPlus.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\BLL.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Model.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Helpers.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Mvc.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Razor.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.WebPages.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.WebPages.Deployment.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.WebPages.Razor.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Net.Http.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Net.Http.WebRequest.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\WebMatrix.Data.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\WebMatrix.WebData.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.AspNet.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.Core.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OAuth.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OpenId.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Http.OData.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Data.Edm.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\Microsoft.Data.OData.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Spatial.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\DAL.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\de\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\es\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\it\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\de\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\es\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\fr\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\it\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ja\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ko\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\ru\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\zh-Hans\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\zh-Hant\System.Spatial.resources.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\obj\Debug\quyou.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\obj\Debug\quyou.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\obj\Debug\quyou.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Net.Http.Formatting.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Http.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Net.Http.Formatting.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\quyou\bin\System.Web.Http.xml

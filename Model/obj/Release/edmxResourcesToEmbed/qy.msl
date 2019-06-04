@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="quyouModelStoreContainer" CdmEntityContainer="quyouEntities">
+    <FunctionImportMapping FunctionImportName="Get_Request_Num" FunctionName="quyouModel.Store.Get_Request_Num" />
+    <FunctionImportMapping FunctionImportName="sp_AddPO" FunctionName="quyouModel.Store.sp_AddPO" />
+    <EntitySetMapping Name="tbPOes">
+      <EntityTypeMapping TypeName="quyouModel.tbPO">
+        <MappingFragment StoreEntitySet="tbPO">
+          <ScalarProperty Name="Udt" ColumnName="Udt" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="ModUserId" ColumnName="ModUserId" />
+          <ScalarProperty Name="PNbr" ColumnName="PNbr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbCurrencies">
+      <EntityTypeMapping TypeName="quyouModel.tbCurrency">
+        <MappingFragment StoreEntitySet="tbCurrency">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="symbol" ColumnName="symbol" />
+          <ScalarProperty Name="CyCat" ColumnName="CyCat" />
+          <ScalarProperty Name="CyId" ColumnName="CyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbSuppliers">
+      <EntityTypeMapping TypeName="quyouModel.tbSupplier">
+        <MappingFragment StoreEntitySet="tbSupplier">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Rcpt_Bank_Name" ColumnName="Rcpt_Bank_Name" />
+          <ScalarProperty Name="Rcpt_Bank_Nbr" ColumnName="Rcpt_Bank_Nbr" />
+          <ScalarProperty Name="SuppCat" ColumnName="SuppCat" />
+          <ScalarProperty Name="Udt" ColumnName="Udt" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="ModUserId" ColumnName="ModUserId" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ChsName" ColumnName="ChsName" />
+          <ScalarProperty Name="EngName" ColumnName="EngName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_proc_List_tsks" FunctionName="quyouModel.Store.sp_proc_List_tsks" />
+    <EntitySetMapping Name="tbBPs">
+      <EntityTypeMapping TypeName="quyouModel.tbBP">
+        <MappingFragment StoreEntitySet="tbBP">
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="TskId" ColumnName="TskId" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="PNbr" ColumnName="PNbr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_proc_List_tsks_by_tskStatus" FunctionName="quyouModel.Store.sp_proc_List_tsks_by_tskStatus" />
+    <FunctionImportMapping FunctionImportName="Get_POForDisplay" FunctionName="quyouModel.Store.Get_POForDisplay">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="quyouModel.Get_POForDisplay_Result">
+          <ScalarProperty Name="PNbr" ColumnName="PNbr" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_taskAction" FunctionName="quyouModel.Store.sp_taskAction" />
+    <EntitySetMapping Name="tbStatus">
+      <EntityTypeMapping TypeName="quyouModel.tbStatu">
+        <MappingFragment StoreEntitySet="tbStatus">
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name2" ColumnName="Name2" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_proc_del_PO" FunctionName="quyouModel.Store.sp_proc_del_PO" />
+    <EntitySetMapping Name="tbFiles">
+      <EntityTypeMapping TypeName="quyouModel.tbFile">
+        <MappingFragment StoreEntitySet="tbFile">
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="Udt" ColumnName="Udt" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="ModUserId" ColumnName="ModUserId" />
+          <ScalarProperty Name="Ftype" ColumnName="Ftype" />
+          <ScalarProperty Name="PNbr" ColumnName="PNbr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_proc_file" FunctionName="quyouModel.Store.sp_proc_file">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="quyouModel.sp_proc_file_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PNbr" ColumnName="PNbr" />
+          <ScalarProperty Name="Ftype" ColumnName="Ftype" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tbMains">
+      <EntityTypeMapping TypeName="quyouModel.tbMain">
+        <MappingFragment StoreEntitySet="tbMain">
+          <ScalarProperty Name="unitCost" ColumnName="unitCost" />
+          <ScalarProperty Name="LSupplierId" ColumnName="LSupplierId" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="FinalQty" ColumnName="FinalQty" />
+          <ScalarProperty Name="Udt" ColumnName="Udt" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ShipCat" ColumnName="ShipCat" />
+          <ScalarProperty Name="DestPort" ColumnName="DestPort" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="OuterBoxQty" ColumnName="OuterBoxQty" />
+          <ScalarProperty Name="OuterBoxDim" ColumnName="OuterBoxDim" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Sku" ColumnName="Sku" />
+          <ScalarProperty Name="FBA" ColumnName="FBA" />
+          <ScalarProperty Name="PNbr" ColumnName="PNbr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_proc_Read_PO" FunctionName="quyouModel.Store.sp_proc_Read_PO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="quyouModel.sp_proc_Read_PO_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MainId" ColumnName="MainId" />
+          <ScalarProperty Name="PNbr" ColumnName="PNbr" />
+          <ScalarProperty Name="FBA" ColumnName="FBA" />
+          <ScalarProperty Name="Sku" ColumnName="Sku" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="OuterBoxDim" ColumnName="OuterBoxDim" />
+          <ScalarProperty Name="OuterBoxQty" ColumnName="OuterBoxQty" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="DestPort" ColumnName="DestPort" />
+          <ScalarProperty Name="ShipCat" ColumnName="ShipCat" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FinalQty" ColumnName="FinalQty" />
+          <ScalarProperty Name="comQty" ColumnName="comQty" />
+          <ScalarProperty Name="EngSupplier" ColumnName="EngSupplier" />
+          <ScalarProperty Name="ChsSupplier" ColumnName="ChsSupplier" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Cdt" ColumnName="Cdt" />
+          <ScalarProperty Name="LEngSupplier" ColumnName="LEngSupplier" />
+          <ScalarProperty Name="LChsSupplier" ColumnName="LChsSupplier" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_proc_logistics" FunctionName="quyouModel.Store.sp_proc_logistics" />
+  </EntityContainerMapping>
+</Mapping>

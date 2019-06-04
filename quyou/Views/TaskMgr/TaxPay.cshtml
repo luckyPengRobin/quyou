@@ -1,0 +1,243 @@
+﻿@{
+    ViewBag.Title = "物流关税支付";
+}
+@using Model;
+@model LgsticForDisplay
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-list"></i> 采购单详细信息</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">采购单号</span>
+                        @Html.LabelForModel(Model.PNbr, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">申请人</span>
+                        @Html.LabelForModel(Model.ModUser, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">申请日期</span>
+                        @Html.LabelForModel(Model.Cdt, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-sm-6 form-group form-group-sm">
+                    <div class="input-group">
+                        <span class="input-group-addon">状态</span>
+                        @Html.LabelForModel(Model.chsTskName, new { @class = "form-control" })
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-edit"></i> 物流关税支付</h3>
+        </div>
+        <div class="panel-body">     
+            <div class="row" style="margin-top:15px;margin-bottom:15px;">
+                <div class="col-lg-12 table-responsive">
+                    <table id="tblgc" class="table table-hover table-bordered table-striped" data-pagination="true" data-show-refresh="true">
+                        <thead>
+                            <tr>
+                                <th data-field="FBA" class="text-center">FBA</th>
+                                <th data-field="LgcNbr" class="text-center">物流单号</th>
+                                <th data-field="yundanNbr" class="text-center">运单号</th>
+                                <th data-field="carriageChrge" class="text-center">运费</th>
+                                <th data-field="traiffChrge" class="text-center">关税</th>
+                                <th data-field="InspecChrge" class="text-center">检查费</th>
+                                <th data-field="others" class="text-center">其它费用</th>  
+                                <th data-field="Supplier" class="text-center">付款方</th>                              
+                                @*<th data-field="totalChrg" class="text-center">总金额</th>*@
+                                <th data-field="confirmComments" class="text-center">备注</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="form-group form-group-sm col-sm-12">
+
+
+                        <span><i class="fa fa-money"> 金额汇总 : @Model.amount</i></span>
+                        <a style="margin-left:60px;" href="javascript:void(0)" onclick="loadTicket();"><i class="fa fa-upload"></i> 上传凭据</a>
+                        <div class="hidden">
+                            <input id="loadtckt" name="loadtckt" type="file" class="file">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group form-group-sm col-sm-12">                      
+                        @Html.TextAreaFor(p => p.Financecomments, new { @class = "form-control", placeholder = "请填写备注信息...", rows = "3" })
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <table id="tbDocs" class="table table-hover" data-pagination="true" data-show-refresh="true"></table>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="row col-lg-12">
+    <div class="btn-group-sm pull-right">
+        <button type="button" class="btn btn-default btn-sm" onclick="formSave();">保存</button>
+        <button type="button" class="btn btn-warning btn-sm" onclick="back2logic();">退回到物流</button>
+        <button type="button" class="btn btn-primary btn-sm" onclick="formSubmit();">提交支付</button>
+    </div>
+</div>
+
+
+
+
+
+@section scripts{
+<script src="~/Scripts/cust/qypo.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            initTable('@Model.BPId');
+        BSFileUpload("loadtckt", '@Model.PNbr', 'TaxTicket', 'tbDocs', '@BLL.UserHelper.Instance.GetUser().Id');
+        if ('@BLL.tbFile.Instance.exist(Model.PNbr, "TaxTicket")' == 'True') {
+            listTickets('tbDocs', '@Model.PNbr', '@BLL.UserHelper.Instance.GetUser().Id', 'TaxTicket');
+        }
+    });
+
+        function loadTicket() {        
+            $("#loadtckt").click();
+        }
+
+        //退回到物流(确认到货)
+        function back2logic() {
+            layer.confirm('确定退回到物流(确认到货)吗？', {
+                icon: 3,
+                title: '系统消息',
+                btn: ['确定', '取消']
+            }, function () {
+                var index = layer.load(1, { shade: [0.5, '#fff'] });   //show loading...
+
+                $.post("@Url.Action("Finance", "TaskMgr")", { BPId: '@Model.BPId', pnbr: '@Model.PNbr', coments: $("#Financecomments").val(), actType: "back2logicCfm" }, function (rst) {
+                    if (!rst.state) {
+                        layer.msg(rst.msg, { time: 1500, icon: 2 }, function () { layer.close(index); });
+
+                    } else {
+                        layer.msg(rst.msg, { time: 1500, icon: 1 }, function () { layer.close(index); window.document.location.href = '@Url.Action("InProcess", "TaskMgr")'; });
+                    }
+                });
+
+            });
+        }
+
+
+    function formSave() {
+        layer.closeAll('loading');
+        var index = layer.load(1, { shade: [0.5, '#fff'] });  //show loading...
+        $.post("@Url.Action("Finance", "TaskMgr")", { BPId: '@Model.BPId', pnbr: '@Model.PNbr', coments: $("#Financecomments").val(), actType: "TaxPaySave" }, function (rst) {
+            if (!rst.state) {
+                layer.msg(rst.msg, { time: 1500, icon: 2 }, function () { layer.close(index); });
+
+            } else {
+                layer.msg(rst.msg, { time: 1500, icon: 1 }, function () { layer.close(index); });
+            }
+        });
+    }
+    function formSubmit() {
+        layer.confirm('确定要提交吗？', {
+            icon: 3,
+            title: '系统消息',
+            btn: ['确定', '取消']
+        }, function () {
+            var index = layer.load(1, { shade: [0.5, '#fff'] });   //show loading...
+
+            $.post("@Url.Action("Finance", "TaskMgr")", { BPId: '@Model.BPId', pnbr: '@Model.PNbr', coments: $("#Financecomments").val(), actType: "TaxPaySubmit" }, function (rst) {
+                if (!rst.state) {
+                    layer.msg(rst.msg, { time: 1500, icon: 2 }, function () { layer.close(index); });
+
+                } else {
+                    layer.msg(rst.msg, { time: 1500, icon: 1 }, function () { layer.close(index); window.document.location.href = '@Url.Action("InProcess", "TaskMgr")'; });
+                }
+            });
+
+        });
+    }
+
+        function initTable(bpid) {
+            $("#tblgc").bootstrapTable('destroy').bootstrapTable({
+                method: "get",  //使用get请求到服务器获取数据
+                url: "@Url.Action("List_logistics2", "Service")", //获取数据的Servlet地址
+                striped: true,  //表格显示条纹
+            cache: false,
+            pagination: true, //启动分页
+            paginationHAlign: 'right',
+            paginationVAlign: 'bottom', //bottom, top, both
+            paginationDetailHAlign: 'left', //right, left
+            showPaginationSwitch: false,//展示页数的选择？
+            pageSize: 10,
+            pageNumber: 1, //当前第几页
+            pageList: [5, 10, 15, 20, 25],
+            search: false,
+            showColumns: false,  //显示下拉框勾选要显示的列
+            showRefresh: false,  //显示刷新按钮
+            sidePagination: "client", //server表示服务端请求client
+            queryParamsType: "limit",
+            queryParams: function queryParams(params) {   //设置查询参数
+                var param = {
+                    BPId: bpid
+
+                };
+                return param;
+            },
+            formatSearch: function () {
+                return 'Search: Request Number';
+            },
+            onLoadSuccess: function () {  //加载成功时执行
+                //layer.msg("加载成功");
+            },
+            onLoadError: function () {  //加载失败时执行
+                //layer.msg("加载数据失败", { time: 1500, icon: 2 });
+            }
+        });
+        }
+
+    </script>
+
+}

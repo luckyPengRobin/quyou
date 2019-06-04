@@ -1,0 +1,27 @@
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Release\Model.dll.config
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Release\Model.dll
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Release\Model.pdb
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Release\EntityFramework.dll
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Release\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Release\EntityFramework.xml
+D:\Persional\customer\quyouupdate\quyou\Model\bin\Release\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyouupdate\quyou\Model\obj\Release\Model.dll
+D:\Persional\customer\quyouupdate\quyou\Model\obj\Release\Model.pdb
+D:\Persional\customer\quyou code\quyou\Model\bin\Release\Model.dll.config
+D:\Persional\customer\quyou code\quyou\Model\bin\Release\Model.dll
+D:\Persional\customer\quyou code\quyou\Model\bin\Release\Model.pdb
+D:\Persional\customer\quyou code\quyou\Model\bin\Release\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou\Model\bin\Release\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou\Model\bin\Release\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou\Model\bin\Release\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou\Model\obj\Release\Model.dll
+D:\Persional\customer\quyou code\quyou\Model\obj\Release\Model.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Release\Model.dll.config
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Release\Model.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Release\Model.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Release\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Release\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Release\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\bin\Release\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\obj\Release\Model.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\Model\obj\Release\Model.pdb

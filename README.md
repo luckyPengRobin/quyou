@@ -1,2 +1,0 @@
-# quyou
-quyou website code

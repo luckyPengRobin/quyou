@@ -1,0 +1,288 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div >
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-ravelry" aria-hidden="true"></i>供应商信息</h3>
+        </div>
+        <div class="panel-body">
+            <div>
+                <div class="form-inline" style="float:right">
+                    <input type="text" name="searchString" id="searchString_id" class="form-control" placeholder="输入供应商或者联系人" />
+
+                    <button type="button" class="btn btn-default btn-sm" id="queryBtn" style="padding-left:2px">
+                        <span class="glyphicon glyphicon-search"></span> 搜索
+                    </button>
+
+
+                </div>
+
+
+
+            </div>
+
+            <br />
+            <table id="tbSupplier" class="table table-hover" data-pagination="true" data-show-refresh="true">
+                @*<thead>
+                    <tr>
+                        <th data-field="Id" data-sortable="false" class="col-sm-1" style="display:none">id</th>
+                      
+                        <th data-field="PortName" data-sortable="true">港口代码</th>
+                        <th data-field="ChsPortName" data-sortable="false">港口名</th>
+                        <th data-field="Country" data-sortable="true">国家代码</th>
+                        <th data-field="ChsCountry" data-sortable="false">国家名</th>
+                        <th data-field="UserName" data-sortable="false">创建人</th>
+                        <th class="col-sm-1" data-field="operation" data-formatter="actionFormatter" data-events="actionEvents">操作</th>
+                    </tr>
+                </thead>*@
+                @*<tbody></tbody>*@
+            </table>
+            <div id="toolbar" class="btn-group-sm">
+                <button id="btnAdd" type="button" class="btn btn-default btn-sm" title="新增供应商" onclick="openDialogMyTeam('@Html.Raw(Url.Action("EditSupplier"))?id','tbSupplier','mainContent','新增供应商');">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#queryBtn").bind("click", initTable);
+            initTable();
+            //$('tr').find('th:eq(0)').hide(); $('tr').find('td:eq(0)').hide();
+        });
+
+
+
+        function initTable() {
+            //$('#tbMyTeam').bootstrapTable('destroy');
+            $("#tbSupplier").bootstrapTable('destroy').bootstrapTable({
+                method: "get",  //使用get请求到服务器获取数据
+                url: "@Url.Action("ListSupplier","Manage")", //获取数据的Servlet地址
+                striped: true,  //表格显示条纹
+                cache: false,
+                pagination: true, //启动分页
+                paginationHAlign: 'right', //right, left
+                paginationVAlign: 'bottom', //bottom, top, both
+                paginationDetailHAlign: 'left', //right, left
+                pageSize: 10,  //每页显示的记录数
+                pageList: [5, 10, 15, 20, 25],  //记录数可选列表
+                search: false,  //是否启用查询
+                toolbar: '#toolbar',
+                showColumns: false,  //显示下拉框勾选要显示的列
+                showRefresh: false,  //显示刷新按钮
+                sidePagination: "server", //server表示服务端请求client
+                showPaginationSwitch: false,//展示页数的选择？
+                queryParamsType: "limit",
+                queryParams: function queryParams(params) {   //设置查询参数
+                    var param = {
+                        pageIndex: Math.ceil(params.offset / params.limit) + 1,
+                        pageSize: params.limit,
+                        search: $("#searchString_id").val(),
+                        sort: params.sort,
+                        sortOrder: params.order
+                    };
+                    return param;
+                },
+                columns: [{
+                    field: 'Id',
+                    title: 'id',
+                    visible: false
+                }, {
+                    field: 'itemId',
+                    title: '#',
+                    formatter: function (value, row, index) {
+                        // return index + 1;
+
+                        var pageSize = $('#tbSupplier').bootstrapTable('getOptions').pageSize;//通过表的#id 可以得到每页多少条  
+                        var pageNumber = $('#tbSupplier').bootstrapTable('getOptions').pageNumber;//通过表的#id 可以得到当前第几页  
+                        return pageSize * (pageNumber - 1) + index + 1;//返回每条的序号： 每页条数 * （当前页 - 1 ）+ 序号  
+                    }
+                },
+                 {
+                     field: 'EngName',
+                     title: '供应商',
+                     visible: true,
+                     searchable:true
+                 },{
+                     field: 'ChsName',
+                     title: '供应商中文名',
+                     visible: true
+                 }, {
+                     field: 'Rcpt_Bank_Nbr',
+                     title: '收款账号',
+                     visible: true
+                 }, {
+                     field: 'Contact',
+                     title: '联系人',
+                     visible: true,
+                     searchable: true
+                 }, 
+                 {
+                     field: 'QQ',
+                     title: 'QQ',
+                     visible: true
+                 },{
+                     field: 'Email',
+                     title: '邮箱',
+                     visible: true
+                 }, {
+                     field: 'Phone',
+                     title: '电话',
+                     visible: true
+                 }, {
+            
+                    field: 'action',
+
+                   title: '操作',
+
+          
+
+            events: actionEvents,
+
+            formatter: function () {
+
+                return [
+                        '<a class="mod" href="javascript:void(0)" title="Edit" style="color:#00868B">', '<i class="glyphicon glyphicon-pencil"></i>', '</a>',
+                        '<a class="delete" href="javascript:void(0)" title="Remove" style="margin-left:10px;color:#00868B">', '<i class="glyphicon glyphicon-remove"></i>', '</a>'
+                ].join('');
+
+
+
+            },
+
+            }],
+             
+           
+          
+                formatSearch: function () {
+                    return '输入供应商或者联系人';
+                },
+                onLoadSuccess: function () {  //加载成功时执行
+                    //layer.msg("加载成功");
+                },
+                onLoadError: function () {  //加载失败时执行
+                    //layer.msg("加载数据失败", { time: 1500, icon: 2 });
+                }
+            });
+        }
+
+        //function actionFormatter(value, row, index) {
+        //    return [
+        //     '<a class="mod" href="javascript:void(0)" title="编辑">', '<i class="glyphicon glyphicon-pencil"></i>', '</a>',
+        //     '<a class="delete" href="javascript:void(0)" title="删除" style="margin-left:10px;">', '<i class="glyphicon glyphicon-remove"></i>', '</a>'
+        //    ].join('');
+        //}
+
+        window.actionEvents = {
+            'click .mod': function (e, value, row, index) {
+                //var url = 'url: @Html.Raw(Url.Action("Edit"))' + "?id=" + escape(row.Id) + "&name=" + escape(row.Member);
+                openDialogMyTeam('@Html.Raw(Url.Action("EditSupplier"))' + "?id=" + escape(row.Id), 'tbSupplier', null, "修改供应商信息");
+            },
+            'click .delete': function (e, value, row, index) {
+                layer.confirm('确定删除？', {
+                    icon: 3,
+                    title: '警告',
+                    btn: ['确认', '取消']
+                }, function (index) {
+                    @*$.ajax({
+                        url: '@Url.Content("~/MyTeam/remove")',
+                        data: { id: row.Id },
+                        success: function (result) {
+                            if (result.state) {
+                                layer.msg(result.msg, { time: 500, icon: 1 });
+                                $("#tbMyTeam").bootstrapTable('refresh');
+                            }
+                        }
+                    });*@
+
+                    $.post("@Url.Action("removeSupplier", "Manage")", { id: row.Id }, function (rst) {
+                        if (rst.state) {
+                            layer.close(index);
+                            layer.msg(rst.msg, { time: 500, icon: 1 });
+                           window.parent.location.reload(); //刷新父页面
+                        }
+                    });
+
+
+
+                }, function () {
+                    //event for Cancel
+                    //layer.msg('Cancelled', { icon: 1 });
+                });
+
+                //alert('You click like action, row: ' + JSON.stringify(row.Id));
+            }
+        }
+
+
+
+        function openDialogMyTeam(openUrl, refreshTbId, vlidFormId, dialogTitle) {
+            //var url = '@Html.Raw(Url.Action("Edit"))' + "?id=" + escape(id);
+            layer.open({
+                title: '<i class="fa fa-plus"></i> ' + dialogTitle,
+                type: 2,
+                area: ['800px', '400px'],   //宽高,默认：'auto'
+                content: [openUrl, "no"],
+                success: function (layero, index) {
+                    //layer.iframeAuto(index)   //iframe自适应高度
+                },
+                end: function () {    //层销毁后触发的回调
+                    $("#" + refreshTbId).bootstrapTable('refresh');   //刷新table
+                },
+                btn: ['提交', '取消'],
+                yes: function (index, layero) {
+                    //var ifname = "layui-layer-iframe" + index;//获得layer层的名字
+                    //var Ifame = window.frames[ifname]//得到框架
+                    var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：iframeWin.method();
+                    //iframeWin.bsvlidtorFormatter();  //execute child method
+                    //var bv = iframeWin.$("#" + vlidFormId).data('bootstrapValidator').validate();
+                    //layer.iframeAuto(index)   //iframe自适应高度
+                    var rst = iframeWin.form_submit();
+                   // alert(rst)
+                    if (rst) {                    
+                      
+                        layer.msg("操作成功", { time: 1000, icon: 1 });
+                        parent.layer.close(index); //关闭当前的弹窗
+                    }
+                    $("#" + refreshTbId).bootstrapTable('refresh');   //刷新table
+
+
+
+
+
+                    //if (iframeWin.form_submit())  //调用iframe框中的提交按钮
+                    //{
+                    //    $("#" + refreshTbId).bootstrapTable('refresh');   //刷新table
+                    //    parent.layer.close(index); //关闭当前的弹窗
+                    //}
+
+
+                    //if (iframeWin.execute_validator()) {
+                    //    iframeWin.form_submit();
+                    //    //iframeWin.$("#" + vlidFormId).submit();//调用iframe框中的提交按钮
+
+                    //}
+                    //else return;
+
+
+                    //window.parent.location.reload(); //刷新父页面
+                    //var FormID = eval(Ifame.document.getElementById("mspecContent"))//将字符转成框架中form的对象
+                }
+            });
+        }
+
+
+
+
+
+
+    </script>
+}
+
+

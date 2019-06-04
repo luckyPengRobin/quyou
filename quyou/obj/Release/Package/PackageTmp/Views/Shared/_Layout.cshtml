@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>趣柚进销管理系统</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #003366;">
+            @Html.Partial("_Header")
+            <div class="navbar-default sidebar" role="navigation">
+                @Html.Partial("_Menu")
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <!-- Page Content -->
+            <div class="container-fluid">
+                <div class="row" style="margin-top:10px">
+                    @*<div class="col-lg-12">
+
+                        </div>*@
+                    @RenderBody()
+                    <!-- /.row -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @Scripts.Render("~/bundles/jquery", "~/Content/Scripts/toojs")
+    @RenderSection("scripts", required: false)
+
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+D:\Persional\customer\quyou\DAL\bin\Debug\DAL.dll.config
+D:\Persional\customer\quyou\DAL\bin\Debug\DAL.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\DAL.pdb
+D:\Persional\customer\quyou\DAL\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\Model.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\ToolKits.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\EPPlus.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\NPOI.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\Model.pdb
+D:\Persional\customer\quyou\DAL\bin\Debug\ToolKits.pdb
+D:\Persional\customer\quyou\DAL\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Persional\customer\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou\DAL\obj\Debug\DAL.dll
+D:\Persional\customer\quyou\DAL\obj\Debug\DAL.pdb
+D:\Persional\customer\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\DAL.dll.config
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\DAL.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\DAL.pdb
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\EntityFramework.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\Model.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\ToolKits.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\EPPlus.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\NPOI.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\Model.pdb
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\ToolKits.pdb
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\EntityFramework.xml
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\obj\Debug\DAL.dll
+C:\Source\web\projects\code\waitforcombining\quyou\DAL\obj\Debug\DAL.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\DAL.dll.config
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\DAL.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\DAL.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\Model.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\ToolKits.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\EPPlus.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\NPOI.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\Model.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\ToolKits.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyouupdate\quyou\DAL\obj\Debug\DAL.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\obj\Debug\DAL.pdb
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\DAL.dll.config
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\DAL.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\DAL.pdb
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\EntityFramework.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\Model.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\ToolKits.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\EPPlus.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\NPOI.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\Model.pdb
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\ToolKits.pdb
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\EntityFramework.xml
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+C:\Source\quyou\qy\robin0404\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+C:\Source\quyou\qy\robin0404\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Source\quyou\qy\robin0404\quyou\DAL\obj\Debug\DAL.dll
+C:\Source\quyou\qy\robin0404\quyou\DAL\obj\Debug\DAL.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\DAL.dll.config
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\DAL.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\DAL.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\ToolKits.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\NPOI.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\EPPlus.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+D:\Persional\customer\quyou code\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou\DAL\obj\Debug\DAL.dll
+D:\Persional\customer\quyou code\quyou\DAL\obj\Debug\DAL.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\DAL.dll.config
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\DAL.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\DAL.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\EntityFramework.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\Model.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\ToolKits.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\NPOI.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\EPPlus.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\Model.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\ToolKits.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\EntityFramework.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\obj\Debug\DAL.dll
+C:\Source\web\projects\code\qy\quyou0416\quyou\DAL\obj\Debug\DAL.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\DAL.dll.config
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\DAL.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\DAL.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\ToolKits.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\NPOI.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\EPPlus.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\obj\Debug\DAL.dll
+D:\Persional\customer\quyou code\quyou0516\quyou\DAL\obj\Debug\DAL.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\obj\Debug\DAL.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\DAL.dll.config
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\DAL.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\DAL.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\EntityFramework.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\Model.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\ToolKits.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\NPOI.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\EPPlus.dll
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\Model.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\ToolKits.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\EntityFramework.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+C:\Source\web\projects\code\qy\quyou20190518\quyou\DAL\obj\Debug\DAL.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\DAL.dll.config
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\DAL.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\DAL.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\Model.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\ToolKits.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\NPOI.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\EPPlus.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\Model.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Debug\System.Linq.Dynamic.Core.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\obj\Debug\DAL.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\obj\Debug\DAL.pdb

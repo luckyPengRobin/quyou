@@ -1,0 +1,69 @@
+D:\Persional\customer\quyouupdate\quyou\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\DAL.dll.config
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\DAL.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\DAL.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\EntityFramework.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\Model.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\Newtonsoft.Json.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\System.Linq.Dynamic.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\ToolKits.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\EPPlus.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\NPOI.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\Model.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\ToolKits.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\EntityFramework.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\Newtonsoft.Json.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\Newtonsoft.Json.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyouupdate\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.xml
+D:\Persional\customer\quyouupdate\quyou\DAL\obj\Release\DAL.dll
+D:\Persional\customer\quyouupdate\quyou\DAL\obj\Release\DAL.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\DAL.dll.config
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\DAL.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\DAL.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\Model.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\ToolKits.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\NPOI.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\EPPlus.dll
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\Model.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyou code\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.xml
+D:\Persional\customer\quyou code\quyou\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou\DAL\obj\Release\DAL.dll
+D:\Persional\customer\quyou code\quyou\DAL\obj\Release\DAL.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\DAL.dll.config
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\DAL.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\DAL.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\EntityFramework.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\Model.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\Newtonsoft.Json.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\System.Linq.Dynamic.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\ToolKits.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\NPOI.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\EPPlus.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\Model.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\ToolKits.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\EntityFramework.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\Newtonsoft.Json.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\Newtonsoft.Json.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.pdb
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\bin\Release\System.Linq.Dynamic.Core.xml
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\obj\Release\DAL.dll
+D:\Persional\customer\quyou code\quyou20190521\quyou\DAL\obj\Release\DAL.pdb

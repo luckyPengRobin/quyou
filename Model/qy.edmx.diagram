@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="97712f7d852043398f6ecadcbe0604a0" Name="Diagram1">
+        <EntityTypeShape EntityType="quyouModel.tbPO" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="quyouModel.tbCurrency" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="quyouModel.tbSupplier" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="quyouModel.tbBP" Width="1.5" PointX="5.375" PointY="4.75" />
+        <EntityTypeShape EntityType="quyouModel.tbStatu" Width="1.5" PointX="5.375" PointY="7.75" />
+        <EntityTypeShape EntityType="quyouModel.tbFile" Width="1.5" PointX="7.375" PointY="6.75" />
+        <EntityTypeShape EntityType="quyouModel.tbMain" Width="1.5" PointX="7.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,649 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="col-lg-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> 库存管理</h3>
+        </div>
+        <div class="panel-body">
+          
+           
+            <br/>
+            <div class="row">
+              
+                <!--指定 date标记-->
+                @*<div class="col-md-4">
+
+                    <input type="text" class="form-control time" id="startDate" placeholder="选择起始月">
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <input type="text" class="form-control time" id="endDate" placeholder="选择截止月">
+
+                </div>*@     
+
+
+
+
+                <div class="form-group  form-group-sm col-sm-12 form-inline">
+
+                    <div class="input-group form-group-sm col-sm-3">
+                       
+                        <select class="select2 form-control" data-placeholder="选择运营" id="sUser" name="sUser"><option></option></select>
+                    </div>
+                    <div class="input-group form-group-sm col-sm-3">
+                     
+                        
+                        <button type="button" id="queryBtn" class="btn btn-primary btn-sm">查询</button>
+                          </div>
+
+                    </div>
+
+                
+
+                </div>
+
+
+
+
+            <div id="divTab" >
+                <br/>
+               
+                <table id="tbStock" class="table table-hover" data-pagination="true" data-show-refresh="true"></table>
+
+                <br />                
+            </div>
+           
+
+
+            @*<div class="form-inline" id="toolbar">
+                <div class="form-group form-group-sm">
+                    <label class="sr-only" for="Pnbr">订单号</label>
+                    <input type="text" id="Pnbr" name="Pnbr" class="form-control input-sm" placeholder="订单号..." />
+                </div>
+                <div class="form-group form-group-sm">
+                    <label for="LNbr" class="sr-only">物流单号</label>
+                    <input type="text" id="LNbr" name="LNbr" class="form-control input-sm" placeholder="物流单号..." />
+                </div>
+                @*<div class="form-group form-group-sm">
+                    <label for="Requester" class="sr-only">姓名</label>
+                    <select class="select2 form-control" style="width:200px;" id="sUser" name="sUser"><option></option></select>
+                </div>*@
+                @*<div class="form-group form-group-sm">
+                    <label for="Status" class="sr-only">状态</label>
+                    <select class="form-control select2" id="Status" name="Status" style="width:150px;">
+                        <option value="">状态...</option>
+                        <option value="Draft">草稿</option>
+                        <option value="InProcess">正在进行</option>
+                        <option value="Closed">已完成</option>
+                        <option value="Cancelled">已取消</option>
+
+                    </select>
+                </div>*@
+                @*<button class="btn btn-primary btn-sm" onclick="bind2Table();"><span class="glyphicon glyphicon-search"></span> Search</button>
+            </div>
+            <div class="col-lg-12">
+                <table id="tbSearh" class="table table-hover table-striped table-bordered" data-pagination="true" data-show-refresh="true"></table>
+            </div>*@
+
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+        //layer.load(1, { shade: [0.5, '#fff'] });   //show loading...
+        peopleSearchNmaeId("sUser");
+       // bind2Table();
+
+        initFile();
+
+        initTable();
+
+        $("#queryBtn").bind("click", getTableData);
+      // $("#submit").bind('click', initTable);
+
+        //$('#startDate').datetimepicker({
+        //    language: "zh-CN",
+        //    format: "yyyy-mm-dd",//显示格式
+        //    minView: "month",//设置只显示到月份
+        //    initialDate: new Date(),//初始化当前日期
+        //    autoclose: true,//选中自动关闭
+        //    todayBtn: true, //显示今日按钮
+        //    clearBtn: true
+
+
+        //});
+
+        //$('#endDate').datetimepicker({
+        //    language: "zh-CN",
+        //    format: "yyyy-mm-dd",//显示格式
+        //    minView: "month",//设置只显示到月份
+        //    initialDate: new Date(),//初始化当前日期
+        //    autoclose: true,//选中自动关闭
+        //    todayBtn: true, //显示今日按钮
+        //    clearBtn: true
+
+
+        //});
+
+        //$("#input-20").fileinput({
+        //    browseClass: "btn btn-primary btn-block",
+        //    showCaption: false,
+        //    showRemove: false,
+        //    showUpload: true,
+        //    uploadUrl: '../Manage/UploadSKUPic',
+        //    enctype: 'multipart/form-data',
+        //    //initialPreviewFileType: 'image',
+        //    //initialPreview: path,
+        //    //initialPreviewAsData: true
+
+        //    //uploadExtraData:function (previewId, index) {
+        //    //    //向后台传递id作为额外参数，是后台可以根据id修改对应的图片地址。
+        //    //    var obj = {};
+        //    //    obj.id = id;
+        //    //    return obj;
+        //    //}
+        //}).on("fileuploaded", function (event, data, previewId, index) {
+        //    // $(this).fileinput("clear").fileinput("enable");   //reSet
+        //    if (data.response.state) {
+        //        //  ListFiles2Table(lstTbId, ChgId);
+        //        $("#imgUrl").val(data.response.imgUrl);
+        //        // alert($("#imgUrl").val());
+        //    } else {
+        //        layer.msg(data.response.msg, { time: 2000, icon: 2 });
+        //    }
+
+        //}).on('filesuccessremove', function (event, key) {
+        //    $("#imgUrl").val("");
+        //}).on('filecleared', function (event) {
+        //    $("#imgUrl").val("");
+        //});
+
+     //   initialFile();
+        });
+
+
+        function showTable() {
+
+            //$("#myModal").close();
+            $('#myModal').map(function () {//用id选择器选中要关闭的模态框
+                $(this).modal('hide'); //关闭
+            });
+            $("#divTab").show();
+            bind2Table();
+
+        }
+        
+        function getTableData() {
+            $('#myModal').map(function () {//用id选择器选中要关闭的模态框
+                $(this).modal('hide'); //关闭
+
+            });
+
+
+            if ($("#exchangeRate").val() == "") {
+                
+                layer.msg("请输入利率", { time: 1000, icon: 2 });
+                return false;
+            }
+
+
+            if ($("#docUrl").val() == "") {
+
+                layer.msg("请上传文件", { time: 1000, icon: 2 });
+
+                return false;
+            }
+
+
+            initTable();
+          
+        }
+
+        function initTable() {
+
+           
+            // $('#tbSKU').bootstrapTable('destroy');
+            $("#tbStock").bootstrapTable('destroy').bootstrapTable({
+
+          
+                method: "post",  //使用get请求到服务器获取数据
+                url: "@Url.Action("ListAllStock","Stock")", //获取数据的Servlet地址
+                striped: true,  //表格显示条纹
+            cache: false,
+            pagination: true, //启动分页
+            paginationHAlign: 'right', //right, left
+            paginationVAlign: 'bottom', //bottom, top, both
+            paginationDetailHAlign: 'left', //right, left
+            pageSize: 10,  //每页显示的记录数
+            pageNumber: 1, //当前第几页
+            pageList: [5, 10, 15, 20, 25],  //记录数可选列表
+            search: false,  //是否启用查询
+           // toolbar: '#toolbar',
+            showColumns: false,  //显示下拉框勾选要显示的列
+            showRefresh: false,  //显示刷新按钮
+            sidePagination: "server", //server表示服务端请求client
+            //showPaginationSwitch: false,//展示页数的选择？
+           
+
+            queryParamsType: "limit",
+            queryParams: function queryParams(params) {   //设置查询参数
+                var param = {
+                   
+                 
+                    saler:$("#sUser").val(),                 
+                   
+                    pageIndex: Math.ceil(params.offset / params.limit) + 1,
+                    pageSize: params.limit,
+                    //startDate: $("#startDate").val(),
+                    //endDate:$("#endDate").val(),
+                  
+                    
+                };
+                return param;
+            },
+            columns: [{
+                field: 'Id',
+                title: 'id',
+                visible: false
+            }, {
+                field: 'itemId',
+                title: '#',
+                formatter: function (value, row, index) {
+                    // return index + 1;
+
+                    var pageSize = $('#tbStock').bootstrapTable('getOptions').pageSize;//通过表的#id 可以得到每页多少条  
+                    var pageNumber = $('#tbStock').bootstrapTable('getOptions').pageNumber;//通过表的#id 可以得到当前第几页  
+                    return pageSize * (pageNumber - 1) + index + 1;//返回每条的序号： 每页条数 * （当前页 - 1 ）+ 序号  
+                }
+            },
+             {
+                 field: 'userName',
+                 title: '运营',
+                 visible: true,
+                 searchable: true
+
+             }
+             ,
+             {
+                 field: 'sku',
+                 title: 'SKU',
+                 visible: true,
+                 searchable:true
+                     
+             },{
+                 field: 'currQty',
+                 title: '库存',
+                 visible: true,
+                 searchable: true,
+                 formatter: function (value,row,index) {                       
+                    @*var sctrl = "<a href='@Url.Content("~/UploadFiles/")" + row.imgUrl + "' target='_blank'>" + row.imgUrl + "</a>";*@
+                    var txt = "<input class='form-control input-sm' id='stock" + index + "' type='number' onchange='chgevnt(this);' value=" + value + " style='width:80px;' placeholder='*' />"
+
+                     return txt;
+
+                 }
+             },{
+
+                field: 'action',
+
+            title: '修改',
+
+
+            events: actionEvents,
+
+            formatter: function () {
+
+                return [
+                        //'<a class="mod" href="javascript:void(0)" title="确认修改" style="color:#00868B">', '<i class="glyphicon glyphicon-ok"></i>', '</a>',
+                        //'  
+                        '<button type="button"  class="btn btn-primary btn-sm mod">提交</button>'
+                       //'<a class="delete" href="javascript:void(0)" title="删除" style="margin-left:10px;color:#00868B">', '<i class="glyphicon glyphicon-remove"></i>', '</a>'
+                ].join('');
+
+
+
+            },
+                 
+
+              }],
+             
+           
+          
+           
+            onLoadSuccess: function (data) {  //加载成功时执行
+               
+                $("#totalProfit").val(data.totalProfit);
+                //var count = data.total;
+
+                //if (count > 0) {
+
+                //  //  $("#queryBtn").attr("disabled", true);
+                //    $("#btnShowUpload").prop('disabled', 'disabled');
+                //}
+
+                if (!data.state) {
+
+                    layer.msg(data.msg, { time: 1500, icon: 2 });
+                }
+               // layer.msg("成功", { time: 1500, icon: 2 });
+                
+            },
+            onLoadError: function () {  //加载失败时执行
+                layer.msg("加载数据失败", { time: 1500, icon: 2 });
+
+            }
+        });
+        }
+
+        window.actionEvents = {
+            'click .mod': function (e, value, row, index) {
+                //var url = 'url: @Html.Raw(Url.Action("Edit"))' + "?id=" + escape(row.Id) + "&name=" + escape(row.Member);
+                // openDialogMyTeam('@Html.Raw(Url.Action("EditPort"))' + "?id=" + escape(row.Id), 'tbPort', null, "修改港口信息");
+
+                var data = value;
+
+                var originStock = row.currQty;
+                row.currQty = $("#stock" + index).val();
+
+                var qtyGap = row.currQty - originStock;
+
+                if (qtyGap == 0) {
+
+                    layer.msg("无更新", { time: 500, icon: 1 });
+                    return;
+                }
+
+
+                layer.confirm('确定修改？', {
+                    icon: 3,
+                    title: '警告',
+                    btn: ['确认', '取消']
+                }, function (index) {
+                   
+                    
+                    $.post("@Url.Action("editStock", "Stock")", { userid: row.modUserid, qtyGap: qtyGap, sku: row.sku }, function (rst) {
+                        if (rst.state) {
+                            // layer.close(index);
+                            layer.msg(rst.msg, { time: 500, icon: 1 });
+                            //  window.parent.location.reload(); //刷新父页面
+                            //initTable();
+                        } else {
+
+                            layer.msg(rst.msg, { time: 2000, icon: 2 });
+                            //[quyou].[dbo].[tbStock]
+                            //window.location.reload();
+                            //  window.parent.location.reload(); //刷新父页面
+                            // window.location.reload();
+
+
+                        }
+                        $("#tbStock").bootstrapTable('refresh');
+                       // window.location.reload();
+                       // initTable();
+                    });
+
+
+
+                }, function () {
+                   
+                });
+
+
+
+
+
+
+
+            },
+            'click .delete': function (e, value, row, index) {
+                layer.confirm('确定删除？', {
+                    icon: 3,
+                    title: '警告',
+                    btn: ['确认', '取消']
+                }, function (index) {
+                    @*$.ajax({
+                        url: '@Url.Content("~/MyTeam/remove")',
+                        data: { id: row.Id },
+                        success: function (result) {
+                            if (result.state) {
+                                layer.msg(result.msg, { time: 500, icon: 1 });
+                                $("#tbMyTeam").bootstrapTable('refresh');
+                            }
+                        }
+                    });*@
+
+                    $.post("@Url.Action("removeProfit", "Manage")", { id: row.Id }, function (rst) {
+                        if (rst.state) {
+                            layer.close(index);
+                            layer.msg(rst.msg, { time: 500, icon: 1 });
+                            window.parent.location.reload(); //刷新父页面
+                        }
+                    });
+
+
+
+                }, function () {
+                    //event for Cancel
+                    //layer.msg('Cancelled', { icon: 1 });
+                });
+
+                //alert('You click like action, row: ' + JSON.stringify(row.Id));
+            }
+        }
+
+
+        function initFile() {
+
+            $("#input-20").fileinput({
+                //browseClass: "btn btn-primary btn-block",
+                //showCaption: false,
+                //showRemove: false,
+                //showUpload: true,
+                //showPreview:false,
+                //uploadUrl: '../Sale/UploadExcel',
+                browseClass: "btn btn-primary btn-block",
+                    showCaption: false,
+                    showRemove: false,
+                    showUpload: true,
+                    uploadUrl: '../Sale/UploadExcel',
+                    enctype: 'multipart/form-data',
+
+                //uploadUrl: '../Manage/UploadSKUPic',
+                enctype: 'multipart/form-data',
+                //initialPreviewFileType: 'image',
+                //initialPreview: path,
+                //initialPreviewAsData: true
+
+                //uploadExtraData:function (previewId, index) {
+                //    //向后台传递id作为额外参数，是后台可以根据id修改对应的图片地址。
+                //    var obj = {};
+                //    obj.id = id;
+                //    return obj;
+                //}
+            }).on("fileuploaded", function (event, data, previewId, index) {
+                // $(this).fileinput("clear").fileinput("enable");   //reSet
+                if (data.response.state) {
+                    //  ListFiles2Table(lstTbId, ChgId);
+                    $("#docUrl").val(data.response.excelUrl);
+                    // alert($("#imgUrl").val());
+                } else {
+                    layer.msg(data.response.msg, { time: 2000, icon: 2 });
+                }
+
+            }).on('filesuccessremove', function (event, key) {
+                $("#docUrl").val("");
+            }).on('filecleared', function (event) {
+                $("#docUrl").val("");
+            });
+
+       
+
+        }
+
+        function initialFile() {
+
+
+            $("#input-20").fileinput({
+                browseClass: "btn btn-primary btn-block",
+                showPreview:false,
+                //showCaption: false,
+                //showRemove: false,
+                //showUpload: false,
+                //uploadUrl: '../Sale/UploadExcel',
+                uploadUrl: '../Manage/UploadSKUPic',
+               // enctype: 'multipart/form-data',
+                allowedFileExtensions: ['xls', 'xlsx'],//接收的文件后缀
+                //initialPreviewFileType: 'image',
+                //initialPreview: path,
+                //initialPreviewAsData: true
+
+                //uploadExtraData:function (previewId, index) {
+                //    //向后台传递id作为额外参数，是后台可以根据id修改对应的图片地址。
+                //    var obj = {};
+                //    obj.id = id;
+                //    return obj;
+                //}
+            }).on("fileuploaded", function (event, data, previewId, index) {
+                // $(this).fileinput("clear").fileinput("enable");   //reSet
+                if (data.response.state) {
+                    //  ListFiles2Table(lstTbId, ChgId);
+                    $("#docUrl").val(data.response.imgUrl);
+                    // alert($("#imgUrl").val());
+                } else {
+                    layer.msg(data.response.msg, { time: 2000, icon: 2 });
+                }
+
+            }).on('filesuccessremove', function (event, key) {
+                 $("#docUrl").val("");
+            }).on('filecleared', function (event) {
+                 $("#docUrl").val("");
+            });
+        }
+        function bind2Table() {
+            $("#tbSearh").bootstrapTable('destroy').bootstrapTable({
+                method: "get",  //使用get请求到服务器获取数据
+                url: "@Url.Action("ListSearch", "Search")", //获取数据的Servlet地址
+                dataType: "json",
+                cache: false,
+                showExport: false,  //是否显示导出按钮
+                buttonsAlign: "right",  //导出按钮位置           
+                striped: true,  //表格显示条纹
+                pagination: true, //启动分页
+                paginationHAlign: 'right', //right, left
+                paginationVAlign: 'bottom', //bottom, top, both
+                paginationDetailHAlign: 'left', //right, left
+                pageSize: 15,  //每页显示的记录数
+                pageNumber: 1, //当前第几页
+                pageList: [10, 15],  //记录数可选列表
+                search: false,  //是否启用查询
+                toolbar: '#toolbar',
+                showColumns: false,  //显示下拉框勾选要显示的列
+                showRefresh: false,  //显示刷新按钮              
+                showPaginationSwitch: false,//展示页数的选择？
+                sidePagination: "server", //server表示服务端请求client
+                queryParamsType: "limit",
+                queryParams: function queryParams(params) {   //设置查询参数
+                    var param = {
+                        pnbr: $("#Pnbr").val(),
+                        lnbr: $("#LNbr").val(),
+                        state: $("#Status").val(),
+                        pageIndex: Math.ceil(params.offset / params.limit) + 1,
+                        pageSize: params.limit
+                    };
+                    return param;
+                },
+                formatSearch: function () {
+                    return 'Search: Request Number';
+                },
+                columns: [
+         {
+             field: 'rownum', // 返回json数据中的name
+             title: '#', // 表格表头显示文字
+             align: 'center', // 左右居中
+             valign: 'middle', // 上下居中
+             visible: true
+         }, {
+             field: 'PNbr',
+             title: '订单号',
+             align: 'center',
+             valign: 'middle'  
+
+         }, {
+             field: 'Cdt',
+             title: '申请日期',
+             align: 'center',
+             valign: 'middle'
+         }, {
+             field: 'ModUser',
+             title: '申请人',
+             align: 'center',
+             valign: 'middle'
+         }, {
+             field: 'ChsRole',
+             title: '我的角色',
+             align: 'center',
+             valign: 'middle'
+         }, {
+             field: 'Status',
+             title: '状态',
+             align: 'center',
+             valign: 'middle'
+         }],
+                onLoadSuccess: function () {  //加载成功时执行
+                    layer.closeAll('loading');
+                },
+                onLoadError: function () {  //加载失败时执行
+                    layer.msg("load error", { time: 1500, icon: 2 });
+                }
+            });
+        }
+
+        function peopleSearchNmaeId(crnId) {
+            $("#" + crnId).select2({
+                ajax: {
+                    cache: false,
+                    dataType: "json",
+                    type: "GET",
+                    url: '@Url.Content("~/Sale/ListSales")',
+                    delay: 250,
+                    success: function (data) {
+                    },
+                    data: function (params) {
+                        return {
+                            query: params.term   // 查询的关键字
+                        };
+                    },
+                    processResults: function (data) {
+                        return {
+                            results: data
+                        };
+                    }
+                },
+                //placeholder: '姓名...',   //需要select控件使用默认默认,或者placeholder无效
+                allowClear: true,
+                theme: 'classic',
+                minimumInputLength: 1,
+                //minimumResultsForSearch: 5, // at least 20 results must be displayed   myteammodal
+                maximumSelectionLength: 3, //最多能够选择的个数
+                tags: false,//允许手动添加
+                templateResult: function (obj) { return obj.text; },    // 显示查询结果
+                templateSelection: function (user) { return user.text; },    // 显示选中的对象
+                escapeMarkup: function (markup) { return markup; }
+            });
+        }
+
+
+
+
+    </script>
+}

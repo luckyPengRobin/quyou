@@ -1,0 +1,333 @@
+﻿@{
+    ViewBag.Title = "EditPort";
+    Layout = "~/Views/Shared/_Layout.Edit.cshtml";
+}
+
+@using Model;
+@model PortInfo
+
+@using (Ajax.BeginForm("EditPort", "Manage", null, new AjaxOptions { HttpMethod = FormMethod.Post.ToString(), OnSuccess = "submitSuccess" }, new { @class = "form-inline", id = "mainContent" }))
+{
+    
+    <div class="container">
+
+      
+        @Html.TextBoxFor(c => c.Id, new { @class = "hidden" })
+
+        <div class="form-group ">
+            <label class="control-label">港口代码</label>
+
+            @*<input type="text" id="portname" name="portname" class="form-control input-sm" />*@
+            @Html.TextBoxFor(c => c.PortCode, new {@id="portCode", @class = "form-control input-sm" })
+        </div>
+
+
+
+        <div class="form-group">
+            <label class="control-label">地区</label>
+
+            @*<input type="text" id="chsportname" name="chsportname" class="form-control" />*@
+            @Html.TextBoxFor(c => c.area, new { @class = "form-control input-sm" })
+    
+        </div>
+
+
+
+
+            <div class="form-group ">
+                <label class="control-label"> 国家</label>
+                <div>
+                    @*<input type="text" id="country" name="country" class="form-control" />*@
+                    @Html.TextBoxFor(c => c.Country, new {@id="country", @class = "form-control input-sm" })
+                </div>
+            </div>
+
+        
+
+       
+
+            <div class="form-group ">
+                <label class="control-label">邮编</label>
+                <div>
+                    @*<input type="text" id="chscountry" name="chscountry" class="form-control" />*@
+                    @Html.TextBoxFor(c => c.PostCode, new { @class = "form-control input-sm" })
+                </div>
+            </div>
+        
+        <div class="form-group ">
+            <label class="control-label">区域</label>
+            <div>
+                @*<input type="text" id="chscountry" name="chscountry" class="form-control" />*@
+                @Html.TextBoxFor(c => c.zone, new { @class = "form-control input-sm" })
+            </div>
+        </div>
+            <div class="form-group" id="divUser">
+                <label class="control-label"> 维护人</label>
+                <div>                    
+                    @Html.TextBoxFor(c => c.UserName, new { @class = "form-control input-sm", @readonly = "readonly" })
+                </div>
+            </div>
+
+      
+
+
+
+    </div>
+    
+  
+   
+
+
+}
+
+
+
+@section scripts{
+
+    <script type="text/javascript">
+
+
+
+    $('#mainContent').bootstrapValidator({
+        message: '请检查输入值',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+
+            PortName: {
+                validators: {
+                    notEmpty: {
+                        message: '港口代码不能为空'
+                    }
+                }
+            },
+            ChsPortName: {
+                validators: {
+                    notEmpty: {
+                        message: '港口中文名不能为空'
+                    }
+                }
+            },
+            Country: {
+                validators: {
+                    notEmpty: {
+                        message: '国家不能为空'
+                    }
+                }
+            },
+            ChsCountry: {
+                validators: {
+                    notEmpty: {
+                        message: '国家中文名不能为空'
+                    }
+                }
+            }
+         
+        }
+
+    }).on('success.form.bv', function (e) {
+        // Prevent form submission 修复bootstrap validator重复向服务端提交bug
+        e.preventDefault();
+        //alert('validate success');
+    });
+
+        //function bsvlidtorFormatter() {
+        //    $('#mainContent').bootstrapValidator({
+        //        message: 'This value is not valid',
+        //        fields: {
+
+        //            teamtitle: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            },
+        //            mfg: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            },
+        //            qlty: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            },
+        //            pcl: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            },
+        //            sales: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            },
+        //            dcu: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            }, splRm: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            },
+        //            PEmgr: {
+        //                validators: {
+        //                    notEmpty: {
+        //                        message: 'The field is required'
+        //                    }
+        //                }
+        //            }
+        //        }
+
+        //    }).on('success.form.bv', function (e) {
+        //        // Prevent form submission 修复bootstrap validator重复向服务端提交bug
+        //        e.preventDefault();
+        //        //alert('validate success');
+        //    });
+        //}
+
+        function execute_validator() {
+            var bv = $("#mainContent").data('bootstrapValidator').validate();
+            return bv.isValid();
+        }
+        function form_submit() {
+            if (execute_validator()) {
+                $("#mainContent").submit();
+                return true;
+            } else return false;
+
+            //if ($("#portname").val() == "") {
+
+            //   // alert("test")
+            //    layer.msg("港口代码不能为空", { time: 1000, icon: 2 });
+            //    return false;
+            //}
+
+            //if ($("#country").val() == "") {
+
+
+            //    layer.msg("国家不能为空", { time: 1000, icon: 2 });
+            //    return false;
+            //}
+
+
+
+            //$("#mainContent").submit();
+            //   return true;
+        }
+
+
+
+        // form submit success callback
+        function submitSuccess(res) {
+            if (res.state) {
+                layer.close(index);
+              //  alert("submitsuccess")
+                layer.msg(res.msg, { time: 500, icon: 1 });
+               window.parent.location.reload(); //刷新父页面
+            }
+            window.close();
+        }
+
+        $(function () {
+
+   
+       
+
+
+
+            @*$("#id").val('@ViewBag.id');
+
+            if ('@ViewBag.act' != null && '@ViewBag.act' == 'Edit') {
+
+                $("#divUser").attr("style", "display:block;")
+
+                $.get('@Url.Action("ReadPort", "Manage")', { id: $('#id').val() }, function (data) {
+                    //$.each(data, function () { bind_AffectedPNs(this); });
+                    //$(data).each(function (MbrId) { console.log(MbrId); });
+                                     
+
+                    //for (var i = 0; i < data.length; i++) {
+
+                    //     alert(data[i])
+                      
+                    //}
+
+                   
+                    $("#portname").attr("value", data[0].portname);
+                    $("#chsportname").attr("value", data[0].chsportname);
+                    $("#country").attr("value", data[0].country);
+                    $("#chscountry").attr("value", data[0].chscountry);
+                    $("#username").attr("value", data[0].username);
+
+                   
+                });
+
+
+
+            } else {
+                $("#divUser").attr("style", "display:none;")
+
+
+            }*@
+
+
+        });
+
+
+        function peopleSearch_multiCtr(crnId) {
+            $(crnId).select2({
+                ajax: {
+                    cache: false,
+                    dataType: "json",
+                    type: "GET",
+                    url: '../Service/ListUsers2',
+                    delay: 250,
+                    success: function (data) {
+                    },
+                    data: function (params) {
+                        return {
+                            query: params.term   // 查询的关键字
+                        };
+                    },
+                    processResults: function (data) {
+                        return {
+                            results: data
+                        };
+                    }
+                },
+                placeholder: 'Select a person...',   //需要select控件使用默认默认,或者placeholder无效
+                allowClear: true,
+                theme: 'classic',
+                minimumInputLength: 2,
+                //minimumResultsForSearch: 5, // at least 20 results must be displayed   myteammodal
+                maximumSelectionLength: 3, //最多能够选择的个数
+                tags: false,//允许手动添加
+                templateResult: function (obj) { return obj.text; },    // 显示查询结果
+                templateSelection: function (user) { return user.text; },    // 显示选中的对象
+                escapeMarkup: function (markup) { return markup; }
+            });
+        }
+
+    </script>
+
+
+
+}

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="row text-center">   
+    <hgroup class="title">
+        <h2>欢迎使用趣柚进销管理系统</h2>
+    </hgroup>
+</div>
+<aside>
+    <h4>1. 我的任务</h4>
+    <ul>
+        <li>你有 <a href="@Url.Content("~/TaskMgr/InProcess")"> @ViewBag.count </a>个待办事项要处理</li>
+
+    </ul>
+</aside>
+<article>
+    <h4>2. 系统流程</h4>
+    <ul>
+        <li>
+            <a href="@Url.Content("~/Docs/wkflow.JPG")" target="_blank"> 打开查看 </a>
+        </li>
+    </ul>
+
+</article>
+
+<aside>
+    <h4>3. 技术支持</h4>
+    <ul>
+        <li><a href="http://www.yiqinfo.com" target="_blank">上海依勤信息科技有限公司</a></li>
+        <li>联系方式：<a href="mailto:yiqinfo@163.com"><i class="fa fa-envelope-o fa-fw" title="yiqinfo@163.com"></i></a>   <i class="fa fa-phone fa-fw" title="15340283737" style="cursor:pointer;"></i></li>
+    </ul>
+</aside>
